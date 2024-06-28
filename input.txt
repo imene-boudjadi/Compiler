@@ -1,0 +1,91 @@
+Program test;
+Acquire MyLibrary;
+
+Define {
+	VarStruct Person {
+		string name;
+		VarStruct PhoneNumber {
+			int number;
+			int countryCode;
+		};
+		bool isAvailable;
+	};
+}
+
+Const {
+	float PI = 3.14;
+	float EXP = 2.73;
+	bool DISABLE = FALSE;
+}
+Var {
+	Person person1;
+	int i;
+	int a;
+	int b;
+	int cc;
+}
+
+Def sayHelloWorld(IN string a){
+	display(a);
+}
+
+Def calculateSum ( IN int s1, int s2 OUT int s3){
+	Var {
+		int s4;
+		int s5;
+		Person r;
+	}
+		s4 = s4 + s5;
+	}
+
+Start {
+
+	a = 2;
+	get(b);
+	display(a);
+	while( a xor b){
+		b = b +1;
+	};
+	while(3){
+		b = b +1;
+	};
+	while(a nor b){
+		b = b +1;
+	};
+	while(b){
+		b = b +1;
+	};
+	while(NOT b){
+		b = b +1;
+	};
+	while(a NOT= b){
+		b = b +1;
+	};
+	while(a == b){
+		b = b +1;
+	};
+	while((a <= b) or (a==0)){
+		b = b +1;
+	};
+
+	while((a < b) or ((a>=0) and (a>i))){
+		b = b +1;
+	};
+
+
+	b =  a** b;
+	while((a + 2) == ((a - 3.2) +  i)){
+		b = "hi";
+	};
+
+	while (((a DIV 3) ** (a DIVR 5)) > ((a * b) ** (a % b))){
+		b = b +1;
+	};
+
+	while (a == "hi"){
+		a= "aa";
+	};
+}
+
+/* commentaire 
+fin */
